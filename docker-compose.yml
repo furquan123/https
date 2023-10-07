@@ -1,0 +1,16 @@
+version: '3'
+services:
+  train:
+    image: fk23/appletrain:v1
+    ports:
+      - "8000:80"
+
+  loan:
+    image: fk23/appleloan:v1
+    ports: 
+      - "8001:80"
+
+  airlines:
+    image: fk23/appleairlines:v1
+    ports: 
+      - "8002:80"   
